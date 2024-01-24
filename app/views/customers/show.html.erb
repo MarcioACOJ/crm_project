@@ -1,0 +1,8 @@
+<h1>Dados do Cliente</h1>
+
+<p><strong>Nome:</strong> <%= @customer.name %></p>
+<p><strong>Email:</strong> <%= @customer.email %></p>
+<p><strong>Telefone:</strong> <%= @customer.phone %></p>
+
+<%= link_to "Editar", edit_customer_path(@customer) %> |
+<%= link_to "Voltar", edit_customer_path %>
