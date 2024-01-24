@@ -1,0 +1,17 @@
+<h1>Clientes</h1>
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Telefone</th>
+    </tr>
+
+    <% @customers.each do |customer| %>
+        <tr>
+            <td><%= customer.name  %></td>
+            <td><%= custumer.email %></td>
+            <td><%= customer.phone %></td>
+        </tr>
+    <% end %>
+</table>
