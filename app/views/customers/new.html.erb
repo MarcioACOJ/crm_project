@@ -1,5 +1,6 @@
 <h1>Novo Cliente</h1>
 
-    <%= render 'form' %>
-    <%= form.submit "Salvar" %>
-<% end %>
+    <%= form_with(model: @customer, local: true) do |form| %>
+        <%= render 'form', form: form %> 
+        <%= form.submit "Salvar" %>
+        <% end %>
